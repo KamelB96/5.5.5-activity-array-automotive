@@ -1,9 +1,8 @@
 //this includes the vehicle class as a module
-import VehicleModule, { Vehicle } from "./vehicleBaseClass";
-
+//import VehicleModule, { Vehicle } from "vehicle.js";
+const VehicleModule = require ("./vehicle.js");
 //this shows how to call from this module...
-let v = new Vehicle("Mecury", "Sedan", "1965", "color", "mileage");
-console.log(v.make)
+
 
 // //this includes the vehicle class as a module
 // const VehicleModule = require("./vehicleBaseClass")
@@ -75,3 +74,5 @@ class car extends VehicleModule.Vehicle {
 
 }
 
+let v = new car("Mecury", "Sedan", "1965", "color", "mileage");
+console.log(v.make)
